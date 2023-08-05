@@ -1,3 +1,4 @@
+
 /// botones cambio de formulario ////////
 let formpaciente = document.getElementById("btnradio1");
 let formprofecional = document.getElementById("btnradio2");
@@ -178,12 +179,12 @@ profesionalform.addEventListener("submit", (e) => {
   if (passwordprofesional.value.length < 8) {
     alert("contraseña corta");
   } else if (passwordprofesional.value !== comfirmpasswordprofesional.value) {
-    document.getElementById("mensajesalertasid").removeAttribute("hidden");
+    document.getElementById("mensajesalertasid2").removeAttribute("hidden");
   } else if (especializacionprofesional === "Especializacion") {
     alert("nomebaño");
   } else {
     document.getElementById("profesionalform").reset();
     alert("todo ok");
-    document.getElementById("mensajesalertasid").setAttribute("hidden", true);
+    document.getElementById("mensajesalertasid2").setAttribute("hidden", true);
   }
 });
