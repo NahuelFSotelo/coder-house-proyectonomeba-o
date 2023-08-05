@@ -1,0 +1,26 @@
+html{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fondologin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.caja1{
+    padding-top: 5px;
+    width: 350px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 5px;
+    border: 5px;
+ 
+}
