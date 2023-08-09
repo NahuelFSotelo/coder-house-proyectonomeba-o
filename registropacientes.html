@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/ISOTIPOCLINICA.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/registro.css"">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -10,9 +30,114 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
     <title>Registro</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/LOGOCLINICA2.png"
+              alt=""
+              width="190px"
+              height="40px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                >
+                  Servicios</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Diagnóstico por imágen</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Especialidades</a></li>
+                  <li><a class="dropdown-item" href="#">Internación</a></li>
+                  <li><a class="dropdown-item" href="#">Laboratorio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown pt-2">
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                  >Turnos</a
+                >
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                  >Iniciar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="MODAL1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <center>
+              <img
+                src="/img/cheeck.png"
+                alt="iconcheeck"
+                width="50%"
+                height="50%"
+              />
+            </center>
+            <p>Registro exitoso, verifique su casilla de correo electrónico.</p>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="formularioregistro">
       <div class="caja2"></div>
       <div class="caja1">
@@ -36,7 +161,7 @@
               checked
             />
             <label class="btn btn-outline-primary" for="btnradio1"
-              >paciente</label
+              >Paciente</label
             >
 
             <input
@@ -47,7 +172,7 @@
               autocomplete="off"
             />
             <label class="btn btn-outline-primary" for="btnradio2"
-              >profesional</label
+              >Profesional</label
             >
           </div>
         </div>
@@ -100,7 +225,7 @@
                     id="celupacinte"
                     type="text"
                     class="form-control"
-                    placeholder="Numero de Celular"
+                    placeholder="Número de celular"
                     aria-label="correo electronico"
                     aria-describedby="btnGroupAddon"
                     required
@@ -128,7 +253,7 @@
                     id="Documentonum2"
                     type="text"
                     class="form-control"
-                    placeholder="Numero de Documento"
+                    placeholder="Número de Documento"
                     aria-label="correo electronico"
                     aria-describedby="btnGroupAddon"
                     required
@@ -157,7 +282,7 @@
                   type="email"
                   class="form-control"
                   maxlength="60"
-                  placeholder="correo electronico"
+                  placeholder="Correo electrónico"
                   aria-label="email"
                   aria-describedby="btnGroupAddon"
                   required
@@ -216,7 +341,7 @@
                   type="password"
                   class="form-control"
                   maxlength="44"
-                  placeholder="Repetir Contraseña"
+                  placeholder="Repetir contraseña"
                   aria-label="password"
                   aria-describedby="btnGroupAddon"
                   required
@@ -231,8 +356,19 @@
             <center>
               <button type="submit" class="btn btn-primary">Registrarse</button>
             </center>
-            <div id="mensajesalertasid" class="mensajesalertas alert alert-danger" hidden>
+            <div
+              id="mensajesalertasid"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
               Las contraseñas deben ser iguales
+            </div>
+            <div
+              id="alertacontraseñacorta"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              La contraseña es corta
             </div>
           </div>
         </form>
@@ -285,7 +421,7 @@
                     id="Dninum"
                     type="text"
                     class="form-control"
-                    placeholder="Numero de Celular"
+                    placeholder="Número de celular"
                     aria-label="correo electronico"
                     aria-describedby="btnGroupAddon"
                     required
@@ -313,7 +449,7 @@
                     id="Documentonum"
                     type="text"
                     class="form-control"
-                    placeholder="Numero de Documento"
+                    placeholder="Número de documento"
                     aria-label="correo electronico"
                     aria-describedby="btnGroupAddon"
                     required
@@ -345,7 +481,7 @@
                   type="text"
                   class="form-control"
                   max="44"
-                  placeholder="Numero de matricula"
+                  placeholder="Número de matrícula"
                   aria-label="password"
                   aria-describedby="btnGroupAddon"
                   required
@@ -358,7 +494,7 @@
                   aria-label="Default select example"
                   required
                 >
-                  <option selected>Especializacion</option>
+                  <option selected disabled value="">Especialización</option>
                   <option value="1">Cardiología</option>
                   <option value="2">Cirugía General</option>
                   <option value="3">Clínia médica</option>
@@ -391,7 +527,7 @@
                   type="email"
                   class="form-control"
                   maxlength="60"
-                  placeholder="correo electronico"
+                  placeholder="Correo electrónico"
                   aria-label="Input group example"
                   aria-describedby="basic-addon1"
                   required
@@ -454,7 +590,7 @@
                   type="password"
                   class="form-control"
                   maxlength="44"
-                  placeholder="Repetir Contraseña"
+                  placeholder="Repetir contraseña"
                   aria-label="Input group example"
                   aria-describedby="basic-addon1"
                   required
@@ -471,13 +607,30 @@
                 Registrarme como profesional
               </button>
             </center>
-            <div id="mensajesalertasid2" class="mensajesalertas2 alert alert-danger" hidden>Las contraseñas deben ser iguales
-              
+            <div
+              id="mensajesalertasid2"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              Las contraseñas deben ser iguales
             </div>
+            <div
+              id="alertacontraseñacorta2"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              La contraseña es corta
             </div>
-         </form>
+          </div>
+        </form>
       </div>
     </div>
-    <script src="./js/nomebaño.js"></script>
+
+    <script src="./js/siginlogin.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
